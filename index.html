@@ -71,7 +71,7 @@
         <div class="flex flex-col">
           <button
             id="HireMe"
-            class="rounded-3xl bg-white px-8 py-[0.25rem] text-lg my-auto hover:bg-brightOrange duration-200 hover:text-white hover:scale-105"
+            class="rounded-3xl bg-white px-8 py-[0.25rem] text-lg font-semibold my-auto hover:bg-brightOrange duration-200 hover:text-white hover:scale-105"
           >
             Hire Me
           </button>
@@ -83,10 +83,10 @@
     <section id="hero" class="bg-purpleBlueBackground">
       <!-- Hero Container -->
       <div
-        class="max-w-7xl text-center mx-auto py-20 text-white flex flex-col relative md:text-left px-10"
+        class="max-w-7xl text-center mx-auto text-white flex flex-col relative md:text-left px-10 md:flex-row"
       >
         <!-- About Me Section -->
-        <div class="md:w-1/2">
+        <div class="md:w-1/2 z-40 py-[7rem]">
           <p class="text-brightOrange font-semibold tracking-wider text-xl">
             Hi,It's me
           </p>
@@ -104,11 +104,11 @@
           </p>
           <!-- Social Icons -->
           <div
-            class="flex space-x-4 my-5 mx-auto items-center justify-center md:justify-start"
+            class="flex space-x-4 my-7 mx-auto items-center justify-center md:justify-start"
           >
             <!-- Facebook -->
             <div class="group white-filter">
-              <a href="#">
+              <a href="https://www.facebook.com" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -126,7 +126,7 @@
             </div>
             <!-- GitHub -->
             <div class="group white-filter">
-              <a href="#">
+              <a href="https://www.github.com/efat1531" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -144,7 +144,7 @@
             </div>
             <!-- Linkdin -->
             <div class="group white-filter">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/sp3cter/" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -161,6 +161,22 @@
               </a>
             </div>
           </div>
+          <!-- Download CV Button -->
+
+          <button
+            id="download-cv-btn"
+            class="mx-auto md:mr-auto md:ml-0 rounded-3xl px-8 py-2 bg-brightOrange font-semibold tracking-wide hover:scale-105 mt-8 md:mt-4"
+          >
+            Download CV
+          </button>
+        </div>
+        <!-- Image -->
+        <div class="hidden md:flex w-[60%]">
+          <img
+            src="./Images/HeroImage.png"
+            alt=""
+            class="pr-20 object-contain"
+          />
         </div>
       </div>
     </section>
