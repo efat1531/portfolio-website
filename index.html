@@ -13,16 +13,16 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <!-- Header Nav Bar -->
+    <!-- *Header Nav Bar -->
     <header id="menu-bar" class="bg-darkBlueBackground">
       <!-- Section Container -->
       <div
-        class="flex justify-between py-[0.94rem] max-w-7xl mx-auto content-center px-10"
+        class="flex justify-between py-[0.94rem] section-container content-center px-10"
       >
         <!-- Name -->
         <a href="#menu-bar">
           <h1
-            class="py-2 select-none my-3 text-white font-bold tracking-widest uppercase scale-90 sm:scale-95 md:scale-100"
+            class="py-2 select-none my-3 font-bold tracking-widest uppercase scaling"
           >
             <span class="text-brightOrange text-4xl">E</span
             ><span class="text-2xl">fat</span>
@@ -74,10 +74,10 @@
           <!-- Todo: Mobile Navigation Menu -->
         </nav>
         <!-- Hire Me Button -->
-        <div class="flex flex-col scale-[.80] sm:scale-95 md:scale-100">
+        <div class="flex flex-col scaling">
           <button
             id="Hire-me"
-            class="rounded-3xl bg-white px-8 py-[0.25rem] text-lg font-semibold my-auto hover:bg-brightOrange duration-200 hover:text-white hover:scale-105"
+            class="rounded-3xl text-black bg-white px-8 py-[0.25rem] text-lg font-semibold my-auto hover:bg-brightOrange duration-200 hover:text-white hover:scale-105"
           >
             Hire me
           </button>
@@ -85,11 +85,11 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- *Hero Section -->
     <section id="hero" class="bg-purpleBlueBackground">
       <!-- Hero Container -->
       <div
-        class="max-w-7xl text-center mx-auto text-white flex flex-col relative md:text-left px-10 md:flex-row"
+        class="section-container flex flex-col relative md:text-left px-10 md:flex-row"
       >
         <!-- About Me Section -->
         <div class="md:w-1/2 z-40 py-[7rem]">
@@ -200,10 +200,10 @@
         </div>
       </div>
     </section>
-    <!-- About Me Section -->
+    <!-- *About Me Section -->
     <section id="about-me" class="bg-darkBlueBackground">
       <!-- About Me Container -->
-      <div class="max-w-7xl mx-auto text-center text-white py-16">
+      <div class="section-container py-16">
         <!-- About me Header -->
         <div class="p-2">
           <div
@@ -218,9 +218,9 @@
         >
           <!-- Image of myself -->
           <img
-            src="./Images/My Image.png"
+            src="./Images/My Image 2.png"
             alt=""
-            class="aspect-auto max-h-[410px] max-w-[360px] mx-auto rounded-xl"
+            class="aspect-auto mx-auto rounded-xl"
           />
           <!-- Description -->
           <div class="flex flex-col items-center md:items-start md:text-left">
@@ -239,6 +239,400 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At
               reiciendis, quas voluptatum facere quam iusto itaque sapiente
               dolor provident.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- *My Services Section -->
+    <section id="services" class="bg-purpleBlueBackground">
+      <!-- Section Container -->
+      <div class="px-10 py-16 section-container">
+        <!-- Section Title -->
+        <div class="p-2">
+          <div
+            class="font-semibold text-center text-4xl tracking-wider w-[14rem] mx-auto border-b-2 py-2"
+          >
+            <p>My <span class="text-brightOrange">Services</span></p>
+          </div>
+        </div>
+        <!-- Services Details Section -->
+        <div
+          class="flex flex-col space-y-8 lg:flex-row items-center justify-evenly my-12 lg:space-x-8 lg:space-y-0"
+        >
+          <!-- First Item -->
+          <div class="services-item-container">
+            <!-- Image -->
+            <svg
+              width="80"
+              height="80"
+              viewBox="0 0 80 80"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute inset-x-0 top-[2.88rem] mx-auto"
+            >
+              <g id="laptop-code">
+                <path
+                  id="Vector-laptop-code"
+                  d="M31.8788 40.7062C32.66 41.4875 33.9263 41.4875 34.7075 40.7062L36.1213 39.2925C36.9025 38.5112 36.9025 37.245 36.1213 36.4638L31.6562 32L36.12 27.535C36.9012 26.7538 36.9012 25.4875 36.12 24.7063L34.7062 23.2925C33.925 22.5112 32.6587 22.5112 31.8775 23.2925L24.585 30.585C23.8037 31.3662 23.8037 32.6325 24.585 33.4137L31.8788 40.7062ZM43.88 39.2938L45.2938 40.7075C46.075 41.4888 47.3413 41.4888 48.1225 40.7075L55.415 33.415C56.1963 32.6338 56.1963 31.3675 55.415 30.5863L48.1225 23.2937C47.3413 22.5125 46.075 22.5125 45.2938 23.2937L43.88 24.7075C43.0988 25.4888 43.0988 26.755 43.88 27.5362L48.3438 32L43.88 36.465C43.0988 37.2463 43.0988 38.5125 43.88 39.2938ZM78 60H47.6925C47.6 62.4762 45.8538 64 43.6 64H36C33.6637 64 31.8725 61.8162 31.9038 60H2C0.9 60 0 60.9 0 62V64C0 68.4 3.6 72 8 72H72C76.4 72 80 68.4 80 64V62C80 60.9 79.1 60 78 60ZM72 14C72 10.7 69.3 8 66 8H14C10.7 8 8 10.7 8 14V56H72V14ZM64 48H16V16H64V48Z"
+                  fill="#F86F03"
+                />
+              </g>
+            </svg>
+            <h3
+              class="absolute inset-x-0 top-[10.56rem] font-semibold text-2xl text-center text-indigo-950"
+            >
+              Web Development
+            </h3>
+            <p
+              class="absolute bottom-6 text-center text-lg inset-x-0 px-6 text-indigo-950"
+            >
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour
+            </p>
+          </div>
+          <!-- Second Item -->
+          <div class="services-item-container">
+            <!-- Image -->
+            <svg
+              id="vector-android-logo"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="80"
+              height="80"
+              viewBox="0 0 24 24"
+              class="absolute inset-x-0 top-[2.88rem] mx-auto"
+            >
+              <path
+                d="M 7.5 1 C 7.372 1 7.2439844 1.0489844 7.1464844 1.1464844 C 6.9514844 1.3414844 6.9514844 1.6585156 7.1464844 1.8535156 L 8.4570312 3.1640625 C 6.9691108 4.2559188 6 6.0127547 6 8 L 6 17 C 6 17.552 6.448 18 7 18 L 8 18 L 8 21.5 C 8 22.328 8.672 23 9.5 23 C 10.328 23 11 22.328 11 21.5 L 11 18 L 13 18 L 13 21.5 C 13 22.328 13.672 23 14.5 23 C 15.328 23 16 22.328 16 21.5 L 16 18 L 17 18 C 17.552 18 18 17.552 18 17 L 18 8 C 18 6.0127547 17.030889 4.2559188 15.542969 3.1640625 L 16.853516 1.8535156 C 17.048516 1.6575156 17.048516 1.3424844 16.853516 1.1464844 C 16.658516 0.95148437 16.341484 0.95148438 16.146484 1.1464844 L 14.664062 2.6289062 C 13.860616 2.2295595 12.95819 2 12 2 C 11.04181 2 10.139384 2.2295595 9.3359375 2.6289062 L 7.8535156 1.1464844 C 7.7560156 1.0489844 7.628 1 7.5 1 z M 12 4 C 14.206 4 16 5.794 16 8 L 8 8 C 8 5.794 9.794 4 12 4 z M 10 6 L 10 7 L 11 7 L 11 6 L 10 6 z M 13 6 L 13 7 L 14 7 L 14 6 L 13 6 z M 4 9 C 3.448 9 3 9.448 3 10 L 3 16 C 3 16.552 3.448 17 4 17 C 4.552 17 5 16.552 5 16 L 5 10 C 5 9.448 4.552 9 4 9 z M 20 9 C 19.448 9 19 9.448 19 10 L 19 16 C 19 16.552 19.448 17 20 17 C 20.552 17 21 16.552 21 16 L 21 10 C 21 9.448 20.552 9 20 9 z M 8 10 L 16 10 L 16 16 L 11 16 L 8 16 L 8 10 z"
+                fill="#F86F03"
+              ></path>
+            </svg>
+            <h3
+              class="absolute inset-x-0 top-[10.56rem] font-semibold text-2xl text-center text-indigo-950"
+            >
+              Apps Development
+            </h3>
+            <p
+              class="absolute bottom-6 text-center text-lg inset-x-0 px-6 text-indigo-950"
+            >
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour
+            </p>
+          </div>
+          <!-- Third Item -->
+          <div class="services-item-container">
+            <!-- Image -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="80"
+              height="80"
+              x="0"
+              y="0"
+              viewBox="0 0 682.667 682.667"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              class="absolute inset-x-0 top-[2.88rem] mx-auto"
+            >
+              <g>
+                <g
+                  clip-path="url(#a)"
+                  transform="matrix(1.33333 0 0 -1.33333 0 682.667)"
+                >
+                  <path
+                    d="M0 0h184v13.964C184 28.343 172.343 40 157.964 40H26.036C11.657 40 0 28.343 0 13.964Z"
+                    style="
+                      stroke-width: 20;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-dasharray: none;
+                      stroke-opacity: 1;
+                    "
+                    transform="translate(148.928 10)"
+                    fill="none"
+                    stroke="#f86f03"
+                    stroke-width="20"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-dasharray="none"
+                    stroke-opacity=""
+                    data-original="#000000"
+                    opacity="1"
+                    class=""
+                  ></path>
+                  <path
+                    d="M208.928 50h64v54h-64z"
+                    style="
+                      stroke-width: 20;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-dasharray: none;
+                      stroke-opacity: 1;
+                    "
+                    fill="none"
+                    stroke="#f86f03"
+                    stroke-width="20"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-dasharray="none"
+                    stroke-opacity=""
+                    data-original="#000000"
+                    opacity="1"
+                    class=""
+                  ></path>
+                  <path
+                    d="M0 0v0"
+                    style="
+                      stroke-width: 20;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-dasharray: none;
+                      stroke-opacity: 1;
+                    "
+                    transform="translate(240.928 137.012)"
+                    fill="none"
+                    stroke="#f86f03"
+                    stroke-width="20"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-dasharray="none"
+                    stroke-opacity=""
+                    data-original="#000000"
+                    opacity="1"
+                    class=""
+                  ></path>
+                  <path
+                    d="M0 0v-164.966C0-181.554-13.446-195-30.034-195h-401.698c-16.587 0-30.033 13.446-30.033 30.034v275.932c0 16.588 13.446 30.034 30.033 30.034h245.967"
+                    style="
+                      stroke-width: 20;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-dasharray: none;
+                      stroke-opacity: 1;
+                    "
+                    transform="translate(471.765 299)"
+                    fill="none"
+                    stroke="#f86f03"
+                    stroke-width="20"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-dasharray="none"
+                    stroke-opacity=""
+                    data-original="#000000"
+                    opacity="1"
+                    class=""
+                  ></path>
+                  <path
+                    d="M0 0h-381.771"
+                    style="
+                      stroke-width: 20;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-dasharray: none;
+                      stroke-opacity: 1;
+                    "
+                    transform="translate(391.77 166.883)"
+                    fill="none"
+                    stroke="#f86f03"
+                    stroke-width="20"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-dasharray="none"
+                    stroke-opacity=""
+                    data-original="#000000"
+                    opacity="1"
+                    class=""
+                  ></path>
+                  <path
+                    d="M0 0v0"
+                    style="
+                      stroke-width: 20;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-dasharray: none;
+                      stroke-opacity: 1;
+                    "
+                    transform="translate(431.765 166.883)"
+                    fill="none"
+                    stroke="#f86f03"
+                    stroke-width="20"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-dasharray="none"
+                    stroke-opacity=""
+                    data-original="#000000"
+                    opacity="1"
+                    class=""
+                  ></path>
+                  <path
+                    d="M0 0h81.334"
+                    style="
+                      stroke-width: 20;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-dasharray: none;
+                      stroke-opacity: 1;
+                    "
+                    transform="translate(15 215)"
+                    fill="none"
+                    stroke="#f86f03"
+                    stroke-width="20"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-dasharray="none"
+                    stroke-opacity=""
+                    data-original="#000000"
+                    opacity="1"
+                    class=""
+                  ></path>
+                  <path
+                    d="M0 0v0"
+                    style="
+                      stroke-width: 20;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-dasharray: none;
+                      stroke-opacity: 1;
+                    "
+                    transform="translate(135.941 215)"
+                    fill="none"
+                    stroke="#f86f03"
+                    stroke-width="20"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-dasharray="none"
+                    stroke-opacity=""
+                    data-original="#000000"
+                    opacity="1"
+                    class=""
+                  ></path>
+                  <path
+                    d="M0 0v42.926h-23.131a98.527 98.527 0 0 1-13.188 31.861l.001.004 16.347 16.347v.001l-30.353 30.353s0 0 0 0l-16.348-16.347c-.001-.001-.003-.002-.004-.001a98.549 98.549 0 0 1-31.861 13.188v23.131h-42.926v-23.158a98.54 98.54 0 0 1-31.817-13.208l-16.396 16.395s0 0 0 0l-30.353-30.353v-.001l16.424-16.423v-.004a98.574 98.574 0 0 1-13.141-31.785H-240V0l.001-.001h23.28a98.54 98.54 0 0 1 13.162-31.736l-.001-.004-16.471-16.472v0l30.353-30.353c0-.001 0-.001 0 0l16.472 16.471.003.001a98.55 98.55 0 0 1 31.738-13.162v-23.281s0 0 0 0h42.926s0 0 0 0v23.254a98.574 98.574 0 0 1 31.785 13.141c.001.001.003 0 .004-.001l16.424-16.423c0-.001 0-.001 0 0l30.353 30.353v0l-16.395 16.396v.003A98.55 98.55 0 0 1-23.158-.001H-.001z"
+                    style="
+                      stroke-width: 20;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-dasharray: none;
+                      stroke-opacity: 1;
+                    "
+                    transform="translate(502 360.537)"
+                    fill="none"
+                    stroke="#f86f03"
+                    stroke-width="20"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-dasharray="none"
+                    stroke-opacity=""
+                    data-original="#000000"
+                    opacity="1"
+                    class=""
+                  ></path>
+                  <path
+                    d="M0 0c0 28.719-23.281 52-52 52s-52-23.281-52-52 23.281-52 52-52S0-28.719 0 0z"
+                    style="
+                      stroke-width: 20;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-dasharray: none;
+                      stroke-opacity: 1;
+                    "
+                    transform="translate(434 382)"
+                    fill="none"
+                    stroke="#f86f03"
+                    stroke-width="20"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-dasharray="none"
+                    stroke-opacity=""
+                    data-original="#000000"
+                    opacity="1"
+                    class=""
+                  ></path>
+                  <path
+                    d="M0 0v0"
+                    style="
+                      stroke-width: 20;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-dasharray: none;
+                      stroke-opacity: 1;
+                    "
+                    transform="translate(163.667 314.775)"
+                    fill="none"
+                    stroke="#f86f03"
+                    stroke-width="20"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-dasharray="none"
+                    stroke-opacity=""
+                    data-original="#000000"
+                    opacity="1"
+                    class=""
+                  ></path>
+                  <path
+                    d="M0 0c0 3.785-.391 7.479-1.132 11.044l15.495 8.946-16.884 29.245-15.506-8.953a53.97 53.97 0 0 1-19.118 11.053v17.89h-33.768v-17.89a53.974 53.974 0 0 1-19.119-11.053l-15.506 8.953-16.884-29.245 15.495-8.946A54.226 54.226 0 0 1-108.059 0c0-3.785.391-7.479 1.132-11.044l-15.495-8.946 16.884-29.245 15.506 8.953a53.974 53.974 0 0 1 19.119-11.053v-17.89h33.768v17.89a53.97 53.97 0 0 1 19.118 11.053l15.506-8.953L14.363-19.99l-15.495 8.946A54.226 54.226 0 0 1 0 0Z"
+                    style="
+                      stroke-width: 20;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-dasharray: none;
+                      stroke-opacity: 1;
+                    "
+                    transform="translate(217.696 314.775)"
+                    fill="none"
+                    stroke="#f86f03"
+                    stroke-width="20"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-dasharray="none"
+                    stroke-opacity=""
+                    data-original="#000000"
+                    opacity="1"
+                    class=""
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <h3
+              class="absolute inset-x-0 top-[10.56rem] font-semibold text-2xl text-center text-indigo-950"
+            >
+              Software Development
+            </h3>
+            <p
+              class="absolute bottom-6 text-center text-lg inset-x-0 px-6 text-indigo-950"
+            >
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour
             </p>
           </div>
         </div>
