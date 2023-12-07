@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,19 +17,22 @@
     <header id="menu-bar" class="bg-darkBlueBackground">
       <!-- Section Container -->
       <div
-        class="flex justify-between md:justify-evenly py-[0.94rem] max-w-7xl mx-auto content-center px-10 md:px-0"
+        class="flex justify-between py-[0.94rem] max-w-7xl mx-auto content-center px-10"
       >
-        <!-- Image -->
-        <a href="#">
-          <img
-            src="./Images/Logo.png"
-            alt=""
-            class="h-[3.4375rem] w-[9.395rem]"
-          />
+        <!-- Name -->
+        <a href="#menu-bar">
+          <h1
+            class="py-2 select-none my-3 text-white font-bold tracking-widest uppercase scale-90 sm:scale-95 md:scale-100"
+          >
+            <span class="text-brightOrange text-4xl">E</span
+            ><span class="text-2xl">fat</span>
+            <span class="text-brightOrange text-4xl">S</span
+            ><span class="text-2xl">ikder</span>
+          </h1>
         </a>
         <!-- Nav Menu -->
         <nav
-          class="hidden justify-between text-white text-lg space-x-4 font-semibold py-2 items-center md:flex"
+          class="hidden justify-between space-x-3 text-white text-lg lg:space-x-6 font-semibold py-2 items-center md:flex"
         >
           <!-- Home -->
           <div class="group">
@@ -66,14 +69,15 @@
               class="mx-2 group-hover:border-b group-hover:border-brightOrange"
             ></div>
           </div>
+          <!-- Todo: Mobile Navigation Menu -->
         </nav>
         <!-- Hire Me Button -->
-        <div class="flex flex-col">
+        <div class="flex flex-col scale-[.80] sm:scale-95 md:scale-100">
           <button
-            id="HireMe"
+            id="Hire-me"
             class="rounded-3xl bg-white px-8 py-[0.25rem] text-lg font-semibold my-auto hover:bg-brightOrange duration-200 hover:text-white hover:scale-105"
           >
-            Hire Me
+            Hire me
           </button>
         </div>
       </div>
@@ -90,10 +94,12 @@
           <p class="text-brightOrange font-semibold tracking-wider text-xl">
             Hi,It's me
           </p>
-          <h2 class="text-5xl font-bold leading-[3rem] tracking-widest">
+          <h2
+            class="text-5xl font-bold leading-[3rem] tracking-widest mt-[0.3rem]"
+          >
             Efat Sikder
           </h2>
-          <p class="text-2xl">
+          <p class="text-2xl mt-2">
             And I am a
             <span class="text-brightOrange">Software Developer</span>
           </p>
@@ -108,7 +114,11 @@
           >
             <!-- Facebook -->
             <div class="group white-filter">
-              <a href="https://www.facebook.com" target="_blank">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -126,7 +136,11 @@
             </div>
             <!-- GitHub -->
             <div class="group white-filter">
-              <a href="https://www.github.com/efat1531" target="_blank">
+              <a
+                href="https://www.github.com/efat1531"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -144,7 +158,11 @@
             </div>
             <!-- Linkdin -->
             <div class="group white-filter">
-              <a href="https://www.linkedin.com/in/sp3cter/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/sp3cter/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -177,6 +195,49 @@
             alt=""
             class="pr-20 object-contain"
           />
+        </div>
+      </div>
+    </section>
+    <!-- About Me Section -->
+    <section id="about-me" class="bg-darkBlueBackground">
+      <!-- About Me Container -->
+      <div class="max-w-7xl mx-auto text-center text-white py-16">
+        <!-- About me Header -->
+        <div class="p-2">
+          <div
+            class="font-semibold text-center text-4xl tracking-wider w-[14rem] mx-auto border-b-2 py-2"
+          >
+            <p>About <span class="text-brightOrange">Me</span></p>
+          </div>
+        </div>
+        <!-- Picture and Description -->
+        <div
+          class="flex flex-col items-center space-y-6 my-10 md:flex-row md:space-y-0 md:space-x-14 mx-10"
+        >
+          <!-- Image of myself -->
+          <img
+            src="./Images/My Image.png"
+            alt=""
+            class="aspect-auto max-h-[410px] max-w-[360px] mx-auto rounded-xl"
+          />
+          <!-- Description -->
+          <div class="flex flex-col items-center md:items-start md:text-left">
+            <h2 class="text-3xl font-semibold mb-6">
+              Software Engineer and Competitive Programmer
+            </h2>
+            <p class="text-lg mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              reiciendis, quas voluptatum facere quam iusto itaque sapiente
+              dolor provident aspernatur unde, suscipit illum, velit similique
+              animi iste corporis repellendus veritatis minus voluptas. Sunt,
+              eligendi. Praesentium explicabo facere quo ad earum.
+            </p>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              reiciendis, quas voluptatum facere quam iusto itaque sapiente
+              dolor provident.
+            </p>
+          </div>
         </div>
       </div>
     </section>
