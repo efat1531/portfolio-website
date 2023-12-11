@@ -2,6 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .ham-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+}
+
 /* Section Container */
 .section-container {
   @apply max-w-7xl text-white;
@@ -31,4 +75,8 @@
 
 .skills-item-container-row {
   @apply flex flex-row justify-between items-center px-2;
+}
+
+.mobile-menu-link {
+  @apply relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-brightOrange after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right hover:scale-110;
 }
