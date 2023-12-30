@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="javaScript/main.js"></script>
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="shortcut icon" href="./Images/resume.png" type="image/x-icon" />
     <title>Portfolio Website</title>
@@ -237,7 +238,9 @@
           </div>
           <!-- Download CV Button -->
 
-          <a href="./Images/Efat_Sikder_Resume.pdf" download="Resume of Efat Sikder"
+          <a
+            href="./Images/Efat_Sikder_Resume.pdf"
+            download="Resume of Efat Sikder"
             ><button
               id="download-cv-btn"
               class="mx-auto md:mr-auto md:ml-0 rounded-3xl px-8 py-2 bg-brightOrange font-semibold tracking-wide hover:scale-105 mt-8 md:mt-4"
@@ -1123,59 +1126,10 @@
         ></path>
       </svg>
     </button>
-    <!-- JavaScript -->
-    <script type="module">
-      const navButton = document.getElementById("ham-button");
-      const navMenu = document.getElementById("nav-menu");
-
-      //   @todo Click event trigger Scroll event
-
-      //   window.addEventListener("scroll", () => {
-      //     if (navButton.classList.contains("opened")) {
-      //       console.log("Removed from Scroll event");
-      //       navMenu.classList.remove("flex");
-      //       navMenu.classList.add("hidden");
-      //       navButton.classList.remove("opened");
-      //     }
-      //   });
-      navButton.addEventListener("click", navToggle);
-      function navToggle() {
-        console.log("Clicked Event Activated");
-        if (navButton.classList.contains("opened")) {
-          console.log("Removed from Clicked");
-          navMenu.classList.remove("flex");
-          navMenu.classList.add("hidden");
-          navButton.classList.remove("opened");
-        } else {
-          console.log("Added from Clicked");
-          navMenu.classList.add("flex");
-          navMenu.classList.remove("hidden");
-          navButton.classList.add("opened");
-        }
-      }
-      const mybutton = document.getElementById("btn-back-to-top");
-      const scrollFunction = () => {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          mybutton.classList.remove("hidden");
-        } else {
-          mybutton.classList.add("hidden");
-        }
-      };
-      const backToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      };
-      mybutton.addEventListener("click", backToTop);
-      window.addEventListener("scroll", scrollFunction);
-    </script>
     <script>
       function navOff() {
         const navButton = document.getElementById("ham-button");
         const navMenu = document.getElementById("nav-menu");
-
-        console.log("Clicked Event Activated from Menu");
         if (navButton.classList.contains("opened")) {
           console.log("Removed from Clicked");
           navMenu.classList.remove("flex");
